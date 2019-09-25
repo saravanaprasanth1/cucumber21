@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-25T10:02:26.006Z",
+        "line": 4,
+        "name": "Add two numbers",
+        "description": "",
+        "id": "test-calculator;add-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1789300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter 50 in this calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 8
+                }
+              ],
+              "location": "runn.abd(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I press add",
+            "match": {
+              "arguments": [
+                {
+                  "val": "add",
+                  "offset": 8
+                }
+              ],
+              "location": "runn.acd(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have entered 50 in this calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 15
+                }
+              ],
+              "location": "runn.asd(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press equal symbol",
+            "match": {
+              "arguments": [
+                {
+                  "val": "equal",
+                  "offset": 8
+                }
+              ],
+              "location": "runn.asde(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The result should be 100 on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 21
+                }
+              ],
+              "location": "runn.acde(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Calculator",
+    "description": "This file describes calculator functionality",
+    "id": "test-calculator",
+    "keyword": "Feature",
+    "uri": "classpath:stepo/cucumbr.feature",
+    "tags": []
+  }
+]
